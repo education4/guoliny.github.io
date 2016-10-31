@@ -1,0 +1,123 @@
+/*Background colour*/
+body{
+  background-color: #1a1a1a;
+  margin: 0px;
+}
+
+/*Nav bar*/
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+    margin: 0;
+    overflow: visible;
+    background-color: white;
+    text-align: center;
+    /*Makes the nav bar fixed to the top*/
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+li {
+  font-family: "Berlin Sans FB";
+  font-size: 20px;
+  display: inline-block;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+li.dropdown {
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: red;
+}
+
+.dropdown-content {
+  font-size: 15px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #b3b3b3;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Content*/
+/*Slider*/
+.slider{
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.button-slider{
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-slider:hover{
+  background-color: red;
+  color: white;
+}
+
+/*Second row*/
+.second-row{
+  text-align: center;
+  margin-top: 80px;
+  margin: 0 auto;
+}
+
+/*.second-row a{
+  display: inline-block;
+}*/
+
+.second-row img{
+  border-radius: 4px;
+}
+
+/*Footer*/
+.footer{
+  font-family: "Berlin Sans FB";
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,94 @@
+.mySlides {
+  display:none
+}
+
+.button-left, .button-right {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: pink;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Berlin Sans FB";
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-left span, .button-right span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-left span:after{
+  content: '⇐';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.8s;
+}
+
+.button-right span:after{
+  content: '⇒';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-left:hover span, .button-right:hover span {
+  padding-right: 25px;
+}
+
+.button-left:hover span:after, .button-right:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button{
+  background-color: white;
+  border: 2px solid pink;
+  color: black;
+  padding:inherit;16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+}
+
+.button:hover{
+  background-color: pink;
+  color: white;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.button button{
+  display: inline-block;
+}
+
+.images{
+  margin: 0 auto;
+  margin-top: 60px;
+
+}
+
+img{
+  border-radius: 4px;
+}

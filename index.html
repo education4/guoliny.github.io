@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Changes the websites logo to ShepYang logo -->
+  <link rel="icon" href="logo.ico" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <!--slider-->
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+  <title>ShepYang & Co</title>
+</head>
+<body>
+<!--JS checks if it is the user's first time on the website-->
+<script>
+    var firstTime = localStorage.getItem("first_time");
+    if(!firstTime) {
+      // first time loaded!
+      localStorage.setItem("first_time","1");
+      //Creates a pop up box
+      alert("Welcome to the ShepYang Website!!")
+    }
+</script>
+
+<!--Nav Bar-->
+<nav>
+  <ul>
+    <li class="logo">
+      <a href="index.html">
+        <img src="img/ShepYang-Dark.png" onmouseover="this.src='img/ShepYang-Red.png'" onmouseout="this.src='img/ShepYang-Dark.png'" width="165" height="25" alt="ShepYang Logo">
+      </a>
+    </li>
+    <li class="dropdown">
+      <a href="portfolio.html" class="dropbtn">Team</a>
+      <div class="dropdown-content">
+          <a href="portfolio.html#guolin"> Guolin Yang</a>
+          <a href="portfolio.html#dexter">Dexter Shepherd</a>
+          <a href="portfolio.html#morgan">Morgan Pile</a>
+          <a href="portfolio.html#josh">Josh Hassett</a>
+          <a href="portfolio.html#izi">Izi King</a>
+          <a href="portfolio.html#martha">Martha WE</a>
+      </div>
+    </li>
+    <li><a href="">Competitions</a></li>
+    <li><a href="">Projects</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="pictures.html">Pictures</a></li>
+  </ul>
+</nav>
+
+<div class="slider">
+  <!--Images-->
+  <div class="image">
+    <img class="mySlides" src="img/Banner1.JPG" style="width: 100%">
+
+  </div>
+
+  <div class="image">
+    <img class="mySlides" src="img/Banner2.jpg" style="width: 100%">
+
+  </div>
+
+  <!--Buttons-->
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+<!-- Javascript for the slider -->
+<script>
+  //Manual
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+</script>
+
+<!--Second row...Boxes-->
+<div class="second-row">
+  <a href="portfolio.html#josh"><img src="img/box-josh.png" height="250" width="250"></a>
+  <a href="portfolio.html#martha"><img src="img/box-martha.png" height="250" width="250"></a>
+  <a href="portfolio.html#dexter"><img src="img/box-dexter.png" height="250" width="250"></a>
+  <a href="portfolio.html#guolin"><img src="img/box-guolin.png" height="250" width="250"></a>
+  <a href="portfolio.html#morgan"><img src="img/box-morgan.png" height="250" width="250"></a>
+  <a href="portfolio.html#izi"><img src="img/box-izi.png" height="250" width="250"></a>
+</div>
+
+<footer>
+  <div class="footer">
+    <p>This website was created by Guolin Yang :)</p>
+  </div>
+</footer>
+
+</body>
+</html>
