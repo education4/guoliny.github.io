@@ -4,7 +4,7 @@
   <!-- Changes the websites logo to ShepYang logo -->
   <link rel="icon" href="logo.ico" />
   <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" type="text/css" href="protected.css">
   <!--slider-->
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
@@ -49,35 +49,31 @@
   </ul>
 </nav>
 
-<div class="bio">
-  <div class="bio-content">
-    <img src="img/line.png" style="width: 100%">
-    <h1>The ShepYang Team</h1>
-    <br>
-    <h2><a name="dexter">Dexter Shepherd | Programmer</a></h2>
-      <p></p>
-    <br>
-    <h2><a name="guolin">Guolin Yang | Programmer</a></h2>
-      <p></p>
-    <br>
-    <h2><a name="morgan">Morgan Pile | Designer</a></h2>
-      <p></p>
-    <br>
-    <h2><a name="josh">Josh Hassett | Hardware Guy</a></h2>
-      <p></p>
-    <br>
-    <h2><a name="martha">Martha Whitehouse-Eagle | Designer</a></h2>
-      <p></p>
-    <br>
-    <h2><a name="izi">Izi King | Programmer</a></h2>
-      <p></p>
-    <br>
-    <br>
-    <img src="img/line.png" style="width: 100%">
-    <br>
-    <br>
-  </div>
-</div>
+<script>
+  function passWord() {
+  var testV = 1;
+  var pass1 = prompt('Please Enter Your Password',' ');
+  while (testV < 3) {
+  if (!pass1)
+  history.go(-1);
+  if (pass1.toLowerCase() == "qazxcvbnmklpoiuytrew") {
+  alert('You Got it Right!');
+  window.open('ierhg4hgio3t49h43igh34uj4u90jfg4i4ug94gj4ihg94ug94jgir4ghjr90gu390gihj4i34jg90uj90j49g0uj3.html');
+  break;
+  }
+  testV+=1;
+  var pass1 =
+  prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+  }
+  if (pass1.toLowerCase()!="password" & testV ==3)
+  history.go(-2);
+  return " ";
+  }
+</script>
+<CENTER>
+<form>
+<input id="protectedbutton" type="button" value="Enter Protected Area" onClick="passWord()">
+</form>
 
 <footer>
   <div class="footer">
