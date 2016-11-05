@@ -1,0 +1,24 @@
+.update{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Berlin Sans FB";
+  margin-top: 58px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.update-content{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.date{
+  font-size: 15px;
+  color: grey;
+}
+
+h1, h2{
+  font-family: "Berlin Sans FB", "Comic Sans";
+}

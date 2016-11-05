@@ -10,6 +10,7 @@
   <title>ShepYang & Co</title>
 </head>
 <body>
+
 <!--JS checks if it is the user's first time on the website-->
 <script>
     var firstTime = localStorage.getItem("first_time");
@@ -17,7 +18,7 @@
       // first time loaded!
       localStorage.setItem("first_time","1");
       //Creates a pop up box
-      alert("Welcome to the ShepYang Website!!")
+      prompt("Welcome to the ShepYang Website!!")
     }
 </script>
 
@@ -40,30 +41,25 @@
           <a href="portfolio.html#martha">Martha WE</a>
       </div>
     </li>
-    <li><a href="">Competitions</a></li>
-    <li><a href="">Projects</a></li>
+    <li><a href="competitions.html">Competitions</a></li>
+    <li><a href="projects.html">Projects</a></li>
     <li><a href="news.html">News</a></li>
     <li><a href="pictures.html">Pictures</a></li>
     <li><a href="protected.html">Hidden</a></li>
   </ul>
 </nav>
 
-<div class="slider">
+<div class="slider images">
   <!--Images-->
-  <div class="image">
     <img class="mySlides" src="img/Banner1.JPG" style="width: 100%">
-
-  </div>
-
-  <div class="image">
-    <img class="mySlides" src="img/Banner2.jpg" style="width: 100%">
-
-  </div>
+    <!--Old team picture design<img class="mySlides" src="img/Banner2.jpg" style="width: 100%">-->
+    <img class="mySlides" src="img/Banner3.jpg" style="width: 100%">
 
   <!--Buttons-->
   <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
   <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 </div>
+
 <!-- Javascript for the slider -->
 <script>
   //Manual

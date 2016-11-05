@@ -6,16 +6,16 @@ body{
 
 /*Nav bar*/
 ul {
-    list-style-type: none;
-    padding-top: 10px;
-    margin: 0;
-    overflow: visible;
-    background-color: white;
-    text-align: center;
-    /*Makes the nav bar fixed to the top*/
-    position: fixed;
-    top: 0;
-    width: 100%;
+  list-style-type: none;
+  padding-top: 10px;
+  margin: 0;
+  overflow: visible;
+  background-color: white;
+  text-align: center;
+  /*Makes the nav bar fixed to the top*/
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li {

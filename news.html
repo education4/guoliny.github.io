@@ -4,22 +4,13 @@
   <!-- Changes the websites logo to ShepYang logo -->
   <link rel="icon" href="logo.ico" />
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="news.css">
   <!--slider-->
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
   <title>ShepYang & Co</title>
 </head>
 <body>
-<!--JS checks if it is the user's first time on the website-->
-<script>
-    var firstTime = localStorage.getItem("first_time");
-    if(!firstTime) {
-      // first time loaded!
-      localStorage.setItem("first_time","1");
-      //Creates a pop up box
-      alert("Welcome to the ShepYang Website!!")
-    }
-</script>
 
 <!--Nav Bar-->
 <nav>
@@ -40,13 +31,45 @@
           <a href="portfolio.html#martha">Martha WE</a>
       </div>
     </li>
-    <li><a href="">Competitions</a></li>
-    <li><a href="">Projects</a></li>
+    <li><a href="competitions.html">Competitions</a></li>
+    <li><a href="projects.html">Projects</a></li>
     <li><a href="news.html">News</a></li>
     <li><a href="pictures.html">Pictures</a></li>
     <li><a href="protected.html">Hidden</a></li>
   </ul>
 </nav>
+
+<div class="update">
+  <div class="update-content">
+    <img src="img/line.png" style="width: 100%">
+    <h1>News Updates</h1>
+
+    <p class="date">05/November/2016</p>
+    <h2>Website in development!!</h2>
+    <p>The website is currently under development and will soon be up and running a guoliny.github.io</p>
+
+    <p class="date">05/November/2016</p>
+    <h2>We have new members...girls</h2>
+    <p>As of last *insert a period of time*, Martha and Izi have joined the group and have become true neeks. Welcome guys!!</p>
+
+    <p class="date">07/October/2016</p>
+    <h2>Ardingly and PACA!</h2>
+    <p>Guolin Yang goes to cambridge with Ardingly as a representative for PACA.</p>
+
+    <p class="date">04/October/2016</p>
+    <h2>Website in development!!</h2>
+    <p>The birth of ShepYang, with Dexter Shepherd and Guolin Yang as the co-founders.</p>
+
+    <p class="date">04/October/2016</p>
+    <h2>We are boorrrn!!</h2>
+    <p>ShepYang is created; with 6 members</p>
+
+    <br>
+    <img src="img/line.png" style="width: 100%">
+    <br>
+    <br>
+  </div>
+</div>
 
 <footer>
   <div class="footer">
