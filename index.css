@@ -6,6 +6,7 @@ body{
 
 /*Nav bar*/
 ul {
+  z-index: 2;
   list-style-type: none;
   padding-top: 10px;
   margin: 0;
@@ -75,31 +76,10 @@ li a:hover, .dropdown:hover .dropbtn {
   padding-bottom: 20px;
 }
 
-.button-slider{
-  border-radius: 4px;
-  background-color: red;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button-slider:hover{
-  background-color: red;
-  color: white;
-}
-
 /*Second row*/
 .second-row{
   text-align: center;
-  margin-top: 80px;
+  margin-top: 30px;
   margin: 0 auto;
 }
 
@@ -109,6 +89,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .second-row img{
   border-radius: 4px;
+  margin: 5px 5px 10px 5px;
 }
 
 /*Footer*/
@@ -120,4 +101,57 @@ li a:hover, .dropdown:hover .dropbtn {
   background-color: white;
   bottom: 0;
   overflow: hidden;
+}
+
+.leftbtn{
+  margin-left: 20px;
+}
+
+.rightbtn{
+  margin-left: 10px;
+}
+
+.floating{
+  top: 30%;
+  /*transform: translate(0%,-170%);*/
+  color: black;
+  font-family: "Berlin Sans FB";
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  transition: transform 0.2s ease;
+}
+
+.floating:hover{
+  transform: scale(1.1);
+}
+
+/*Fading animation*/
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
