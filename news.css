@@ -5,13 +5,13 @@
   font-size: 18px;
   font-family: "Berlin Sans FB";
   margin-top: 58px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .update-content{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .date{
@@ -20,5 +20,5 @@
 }
 
 h1, h2{
-  font-family: "Berlin Sans FB", "Comic Sans";
+  font-family: Saucer, "Berlin Sans FB", "Comic Sans";
 }
