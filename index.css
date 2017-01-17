@@ -20,7 +20,7 @@ ul {
 }
 
 li {
-  font-family: Saucer, "Berlin Sans FB";
+  font-family: heading, "Berlin Sans FB";
   font-size: 18px;
   display: inline-block;
 }
@@ -94,7 +94,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /*Footer*/
 .footer{
-  font-family: Saucer, "Berlin Sans FB";
+  font-family: normal, "Berlin Sans FB";
   margin-top: 10px;
   text-align: center;
   width: 100%;

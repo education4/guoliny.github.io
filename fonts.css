@@ -1,21 +1,10 @@
 /*Imports the font*/
 @font-face{
-    font-family: Vertigo;
-    src: url('fonts/VertigoFlf.ttf');
+    font-family: heading;
+    src: url('fonts/heading.ttf');
 }
 
 @font-face{
-    font-family: Prisma;
-    src: url('fonts/Prisma.ttf');
-}
-
-/*Imports the font*/
-@font-face{
-    font-family: Vertigo;
-    src: url('fonts/VertigoFlf.ttf');
-}
-
-@font-face{
-    font-family: Saucer;
-    src: url('fonts/SaucerBB.ttf');
+    font-family: normal;
+    src: url('fonts/normal.ttf');
 }
