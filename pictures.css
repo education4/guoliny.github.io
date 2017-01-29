@@ -5,9 +5,9 @@
 .button-left, .button-right {
   display: inline-block;
   border-radius: 4px;
-  background-color: pink;
+  background-color: white;
   border: none;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   font-size: 15px;
   font-family: normal, "Berlin Sans FB";
