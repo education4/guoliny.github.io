@@ -21,7 +21,7 @@ ul {
 
 li {
   font-family: heading, "Berlin Sans FB";
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
 }
 
@@ -44,7 +44,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content {
-  font-size: 15px;
+  font-size: 18px;
     display: none;
     position: absolute;
     background-color: #e6e6e6;
@@ -148,6 +148,10 @@ li a:hover, .dropdown:hover .dropbtn {
   top: 30%;
   left: 40%;
   text-align: center;
+}
+
+#the-team {
+  color: white;
 }
 
 /*Fading animation*/
