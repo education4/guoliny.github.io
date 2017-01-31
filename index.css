@@ -141,6 +141,7 @@ li a:hover, .dropdown:hover .dropbtn {
   position: relative;
   background-color: #990033;
   height: 85vh;
+  animation: blend 11s infinite;
 }
 
 .welcome-content {
@@ -171,4 +172,13 @@ li a:hover, .dropdown:hover .dropbtn {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@keyframes blend {
+  0% { background: #990033;}
+  20% { background: #6600cc;}
+  40% { background: #ff0066;}
+  60% { background: #ffff00;}
+  80% { background: #00cc99;}
+  100% { background: #990033;}
 }
